@@ -21,6 +21,5 @@ class LoginTest extends TestBase {
 
         assertEquals(ConfigurationReader.getUsername(), desktopPage.getUserName());
         assertEquals("Рабочий стол", desktopPage.getPageMainTitle());
-        sleep(10000);
     }
 }
