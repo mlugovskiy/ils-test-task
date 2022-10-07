@@ -20,7 +20,19 @@ public class LoginPage {
         $(By.id("password")).val(password);
     }
 
+    public String getValidationMessage() {
+        return $(By.cssSelector("div.ant-notification-notice-description > div.content")).text();
+    }
+
     public void clickOnSubmitButton() {
         $(By.cssSelector("button[type=\"submit\"]")).click();
+    }
+
+    public String getLoginFieldAlert() {
+        return $(By.cssSelector("form>div:nth-child(1) div[role=\"alert\"] ")).text();
+    }
+
+    public String getPasswordFieldAlert() {
+        return $(By.cssSelector("form>div:nth-child(2) div[role=\"alert\"] ")).text();
     }
 }

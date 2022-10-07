@@ -36,6 +36,9 @@ public class ConfigurationReader {
 
     public static long getPageLoadTimeout() { return Long.parseLong(properties.getProperty("pageLoadTimeout")); }
 
+    public static long getTimeout() { return Long.parseLong(properties.getProperty("timeout")); }
+
+
 
 
 }
